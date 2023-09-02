@@ -11,7 +11,7 @@ create table veiculo (
     vei_estado varchar(100) not null,
     vei_kmrodados decimal (10, 2) not null, -- no codigo vai aparecer o nome 'decimal'e o numero, mas so assim para os zeros depois do '.' aparecem no banco de dados
     vei_leilao varchar(100),
-    vei_num_placa varchar(100) not null,
+    vei_cod_placa varchar(100) not null,
     vei_tipo_combustivel varchar(100) not null,
     vei_direcao varchar(100) not null,
     vei_marca varchar(100) not NULL,
