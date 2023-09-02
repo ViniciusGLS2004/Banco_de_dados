@@ -9,9 +9,9 @@ create table veiculo (
     vei_cor varchar(100) not null,
     vei_ano int not null,
     vei_estado varchar(100) not null,
-    vei_kmrodados decimal (10, 2) not null,
+    vei_kmrodados decimal (10, 2) not null, -- no codigo vai aparecer o nome 'decimal'e o numero, mas so assim para os zeros depois do '.' aparecem no banco de dados
     vei_leilao varchar(100),
-    vei_num_placa int not null,
+    vei_num_placa varchar(100) not null,
     vei_tipo_combustivel varchar(100) not null,
     vei_direcao varchar(100) not null,
     vei_marca varchar(100) not NULL,
@@ -20,6 +20,7 @@ create table veiculo (
 	vei_desempenho varchar(100) not null,
     vei_preco DECIMAL(10, 2) not null
 );
+select * from veiculo;
  select * from forma_pagamento;
 
 -- Tabela para armazenar informações das formas de pagamento
