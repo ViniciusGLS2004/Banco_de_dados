@@ -21,7 +21,7 @@ create table veiculo (
     vei_estado varchar(100) not null,
     vei_kmrodados float not null,
     vei_leilao varchar(100),
-    vei_num_placa int not null,
+    vei_cod_placa varchar(100) not null,
     vei_tipo_combustivel varchar(100) not null,
     vei_direcao varchar(100) not null,
     vei_fk_marca INT NOT NULL,  -- rastreador para uma marca e modelo especifico de um veiculo
