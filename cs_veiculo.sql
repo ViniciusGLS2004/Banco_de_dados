@@ -21,6 +21,8 @@ create table veiculo (
     vei_preco DECIMAL(10, 2) not null,
     vei_imagem LONGBLOB NOT NULL
 );
+
+ALTER TABLE veiculo DROP COLUMN vei_imagem;
 select * from veiculo;
      select * from forma_pagamento;
  select * from imagens;
