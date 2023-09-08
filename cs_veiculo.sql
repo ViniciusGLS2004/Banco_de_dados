@@ -8,23 +8,18 @@ create table veiculo (
     vei_tipo varchar(100),
     vei_cor varchar(100) not null,
     vei_ano int not null,
-    vei_estado varchar(100) not null,
-    vei_kmrodados decimal (10, 2) not null, -- no codigo vai aparecer o nome 'decimal'e o numero, mas so assim para os zeros depois do '.' aparecem no banco de dados
+    vei_estado varchar(100) not null, -- no codigo vai aparecer o nome 'decimal'e o numero, mas so assim para os zeros depois do '.' aparecem no banco de dados
     vei_leilao varchar(100),
     vei_placa varchar(100) not null,
-    vei_tipo_combustivel varchar(100) not null,
-    vei_direcao varchar(100) not null,
     vei_marca varchar(100) not NULL,
 	vei_modelo varchar(100) NOT NULL,
-	vei_tipo_desempenho varchar(100) not null,
-	vei_desempenho varchar(100) not null,
-    vei_preco DECIMAL(10, 2) not null,
-    vei_imagem LONGBLOB NOT NULL
+    vei_preco DECIMAL(10, 2) not null
 );
 
 ALTER TABLE veiculo DROP COLUMN vei_imagem;
+
 select * from veiculo;
-     select * from forma_pagamento;
+ select * from forma_pagamento;
  select * from imagens;
  
 CREATE TABLE imagens (
@@ -41,7 +36,5 @@ create table forma_pagamento (
 	pag_fk_veiculo int not null,
     foreign key (pag_fk_veiculo) references veiculo (vei_id)
 );
-
-
 
 
